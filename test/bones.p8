@@ -2,7 +2,7 @@ pico-8 cartridge // http://www.pico-8.com
 version 42
 __lua__
 function _init()
-
+	bo={x=64,y=64}
 end
 
 function _update()
@@ -12,7 +12,7 @@ end
 function _draw()
  cls()
  map()
- spr(1,64,64)
+ spr(1,bo.x,bo.y)
 	print("buh")
 end
 
